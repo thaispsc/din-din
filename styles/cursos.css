@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Ubuntu";
+}
+
+header {
+  background-color: #2e948a;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.container-logo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  max-width: 1440px;
+  padding: 1.5vw 5vw;
+}
+
+.logo-header {
+  width: max(17vw, 100px);
+}
+
+nav {
+  text-align: right;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-header {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item-header {
+  display: inline;
+}
+
+.menu-item-link-header {
+  color: #fdfdfd;
+  font-weight: 700;
+  font-size: max(1.3vw, 10px);
+  text-decoration: none;
+  margin-left: 1vw;
+}
+
+.titulo-cursos {
+  margin-left: 10%;
+}
+
+.cursos h1 {
+  font-size: max(3.8vw, 30px);
+  color: #ff4081;
+  margin-bottom: 0;
+}
+
+.cursos p {
+  font-size: max(1.3vw, 10px);
+  color: #555555;
+  margin-top: 0;
+}
+
+.curso {
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 80%;
+  padding-bottom: 5%;
+}
+
+#investimento {
+  border-bottom: solid 5px #c4c4c4;
+}
+
+#poupando {
+  border-bottom: solid 5px #c4c4c4;
+}
+
+.curso img {
+  width: max(21vw, 150px);
+}
+
+.curso h2 {
+  font-size: max(2.2vw, 17px);
+  color: #ff4081;
+  margin: 0;
+}
+
+.curso p {
+  font-size: max(1.15vw, 9px);
+  margin: 5% 0 8% 0;
+  width: 47vw;
+}
+
+.botão-começar {
+  background-color: #419488;
+  color: #fff;
+  font-size: max(1.2vw, 10px);
+  text-decoration: none;
+  border-radius: 62px;
+  cursor: pointer;
+  padding: 2% 7%;
+}
+
+footer {
+  background-color: #2e948a;
+}
+
+.container-logo-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5vw 8vw;
+  max-width: 1440px;
+  margin: 0 1vw;
+}
+
+.logo-rodape {
+  width: max(22vw, 125px);
+}
+
+.menu-item-rodape {
+  list-style: none;
+  margin-bottom: 1vw;
+  text-align: start;
+}
+
+.menu-item-link-rodape {
+  color: #fff;
+  font-weight: 400;
+  font-size: max(1.3vw, 10px);
+  text-decoration: none;
+}
+
+.botões-rodape {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.botao-rodape {
+  color: #fff;
+  font-weight: 400;
+  width: max(20vw, 120px);
+  height: max(3.5vw, 20px);
+  font-size: max(1.3vw, 10px);
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 62px;
+  margin-bottom: 1vw;
+  box-sizing: border-box;
+  padding: 0.7vw 0;
+}
+
+@media (max-width: 1000px) {
+  #investimento {
+    border-bottom: solid 2px #c4c4c4;
+  }
+
+  #poupando {
+    border-bottom: solid 2px #c4c4c4;
+  }
+}
