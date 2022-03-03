@@ -9,6 +9,10 @@ body {
   font-family: "Ubuntu";
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   background-color: #2e948a;
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
@@ -22,31 +26,14 @@ header {
   align-content: center;
   text-align: center;
   max-width: 1440px;
-  padding: 1.5vw 5vw;
+  padding: 1.2vw 5vw;
 }
 
 .logo-header {
   width: max(17vw, 100px);
 }
 
-nav {
-  text-align: right;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.menu-header {
-  margin: 0;
-  padding: 0;
-}
-
 .menu-item-header {
-  display: inline;
-}
-
-.menu-item-link-header {
   color: #fdfdfd;
   font-weight: 700;
   font-size: max(1.3vw, 10px);
@@ -54,14 +41,13 @@ ul {
   margin-left: 1vw;
 }
 
-main {
-  max-width: 1440px;
-  margin: 0 auto;
+.menu-item-header:hover {
+  opacity: 0.5;
 }
 
 .banner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
   margin: 7vw auto;
 }
@@ -79,7 +65,7 @@ main {
   line-height: max(1.98vw, 15.5px);
 }
 
-.banner a {
+.botão-saber-mais {
   text-align: center;
   color: #ff4081;
   font-size: max(1.7vw, 13px);
@@ -88,6 +74,12 @@ main {
   border-radius: 62px;
   padding: 0.6vw 2.6vw;
   line-height: max(1.98vw, 15.5px);
+}
+
+.botão-saber-mais:hover {
+  transition: all 300ms;
+  background-color: #ff4081;
+  color: #fff;
 }
 
 .banner img {
@@ -130,6 +122,13 @@ main {
   padding: 1vw 3.5vw;
 }
 
+.botão-começar:hover {
+  transition: all 300ms;
+  background-color: #fff;
+  color: #ff4081;
+  border: 1px solid #ff4081;
+}
+
 .feedback {
   margin: 8vw 10vw;
 }
@@ -144,7 +143,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 6vw;
+  gap: 7vw;
 }
 
 .comentário {
@@ -178,17 +177,22 @@ main {
 .outros-conteudos h1 {
   color: #009688;
   font-size: max(2.3vw, 18px);
+  line-height: 42.51px;
 }
 
 .mais-conteudo {
   display: flex;
-  gap: 5vw;
+  gap: 9vw;
   margin: 5vw auto;
+}
+
+.conteudo {
+  cursor: pointer;
 }
 
 .retangulo {
   background-color: #c4c4c4;
-  width: max(22.2vw, 159px);
+  width: max(20vw, 159px);
   height: max(13.4vw, 96px);
 }
 
@@ -199,6 +203,7 @@ main {
 }
 
 .conteudo p {
+  color: #000;
   font-size: max(1.15vw, 9px);
   margin: 0 0 4vw 0;
 }
@@ -207,7 +212,11 @@ main {
   text-align: center;
 }
 
-.botão-todos-posts a {
+#botão-todos-posts {
+  text-align: center;
+}
+
+.botão-todos-posts {
   font-size: max(1.6vw, 12px);
   text-decoration: none;
   color: #ff4081;
@@ -217,59 +226,85 @@ main {
   padding: 0.8vw 3.4vw;
 }
 
-footer {
-  background-color: #2e948a;
+.botão-todos-posts:hover {
+  transition: all 300ms;
+  color: #fff;
+  background-color: #ff4081;
 }
 
-.container-logo-rodape {
+footer {
+  background-color: #419488;
+}
+
+.container-logo-rodapé {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5vw 8vw;
+  padding: 3vw 8vw;
   max-width: 1440px;
-  margin: 0 1vw;
 }
 
-.logo-rodape {
-  width: max(22vw, 125px);
+.logo-rodapé {
+  width: max(21.7vw, 125px);
 }
 
-.menu-item-rodape {
-  list-style: none;
-  margin-bottom: 1vw;
-  text-align: start;
-}
-
-.menu-item-link-rodape {
+.menu-item-rodapé {
+  display: block;
   color: #fff;
   font-weight: 400;
   font-size: max(1.3vw, 10px);
   text-decoration: none;
+  margin-bottom: max(0.5vw, 5px);
 }
 
-.botões-rodape {
-  display: flex;
-  flex-direction: column;
+.menu-item-rodapé:hover {
+  opacity: 0.5;
+}
+
+.botões-rodapé {
   text-align: center;
 }
 
-.botao-rodape {
+.botão-rodapé {
+  display: block;
+  background-color: #419488;
   color: #fff;
   font-weight: 400;
   width: max(20vw, 120px);
-  height: max(3.5vw, 20px);
+  height: max(3.2vw, 20px);
   font-size: max(1.3vw, 10px);
-  text-decoration: none;
   border: 1px solid #fff;
   border-radius: 62px;
   margin-bottom: 1vw;
   box-sizing: border-box;
   padding: 0.7vw 0;
+  cursor: pointer;
+}
+
+.botão-rodapé:hover {
+  transition: all 300ms;
+  background-color: #fff;
+  color: #419488;
 }
 
 @media (max-width: 750px) {
+  .banner {
+    display: inline;
+  }
+
   .banner img {
     display: none;
+  }
+
+  .banner-texto,
+  .cursos,
+  .feedback,
+  .conteudos {
+    margin: 5vw 10vw;
+  }
+
+  .outros-conteudos {
+    padding: 0;
   }
 
   .cursos,
@@ -279,17 +314,12 @@ footer {
     justify-content: flex-start;
     gap: 5vw;
     text-align: left;
-    margin: 0 10vw 0 15vw;
   }
 
   .curso-item,
   .conteudo {
     display: flex;
     gap: 5vw;
-  }
-
-  .outros-conteudos {
-    padding: 0;
   }
 
   .curso-imagem img {
@@ -299,9 +329,5 @@ footer {
 
   .curso-item h3 {
     margin-top: 0;
-  }
-
-  body {
-    text-align: center;
   }
 }

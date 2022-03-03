@@ -41,6 +41,10 @@ header {
   margin-left: 1vw;
 }
 
+.menu-item-header:hover {
+  opacity: 0.5;
+}
+
 #introdução-container {
   display: flex;
   justify-content: center;
@@ -124,7 +128,11 @@ footer {
   font-weight: 400;
   font-size: max(1.3vw, 10px);
   text-decoration: none;
-  margin-bottom: 0.5vw;
+  margin-bottom: max(0.5vw, 5px);
+}
+
+.menu-item-rodapé:hover {
+  opacity: 0.5;
 }
 
 .botões-rodapé {
@@ -148,6 +156,7 @@ footer {
 }
 
 .botão-rodapé:hover {
+  transition: all 300ms;
   background-color: #fff;
   color: #419488;
 }
