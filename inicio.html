@@ -10,29 +10,22 @@
   <body>
     <header>
       <div class="container-logo-header">
-        <img
-          class="logo-header"
-          src="images/logo-header.png"
-          alt="Logo do site Dindin"
-        />
-        <nav>
-          <ul class="menu-header">
-            <li class="menu-item-header">
-              <a class="menu-item-link-header" href="">CURSOS</a>
-            </li>
-            <li class="menu-item-header">
-              <a class="menu-item-link-header" href="">BLOG</a>
-            </li>
-            <li class="menu-item-header">
-              <a class="menu-item-link-header" href="">CONTATO</a>
-            </li>
-          </ul>
+        <a href="inicio.html"
+          ><img
+            class="logo-header"
+            src="images/logo-header.png"
+            alt="Logo do site Dindin"
+        /></a>
+        <nav class="menu-header">
+          <a class="menu-item-header" href="cursos.html">CURSOS</a>
+          <a class="menu-item-header" href="blog.html">BLOG</a>
+          <a class="menu-item-header" href="contato.html">CONTATO</a>
         </nav>
       </div>
     </header>
     <main>
       <section class="banner">
-        <div>
+        <div class="banner-texto">
           <h1>
             Educação<br />
             Financeira<br />
@@ -42,7 +35,7 @@
             Vem comigo que te mostro<br />
             por onde começar
           </p>
-          <a href="">quero saber mais</a>
+          <a href="#" class="botão-saber-mais">quero saber mais</a>
         </div>
         <img src="images/ilustra-banner.png" alt="Banner" />
       </section>
@@ -62,7 +55,7 @@
                 in voluptate velit es se cillum dolore<br />
                 eu fugiat nulla pariatur.
               </p>
-              <a class="botão-começar" href="">começar agora</a>
+              <a class="botão-começar" href="curso.html">começar agora</a>
             </div>
           </div>
           <div class="curso-item" id="item2">
@@ -79,7 +72,7 @@
                 in voluptate velit es se cillum dolore<br />
                 eu fugiat nulla pariatur.
               </p>
-              <a class="botão-começar" href="">começar agora</a>
+              <a class="botão-começar" href="#">começar agora</a>
             </div>
           </div>
           <div class="curso-item" id="item3">
@@ -96,7 +89,7 @@
                 in voluptate velit es se cillum dolore<br />
                 eu fugiat nulla pariatur.
               </p>
-              <a class="botão-começar" href="">começar agora</a>
+              <a class="botão-começar" href="#">começar agora</a>
             </div>
           </div>
         </div>
@@ -151,71 +144,76 @@
         </div>
       </section>
       <section class="outros-conteudos">
-        <h1>MAIS CONTEÚDO PARA VOCÊ</h1>
-        <div class="mais-conteudo">
-          <div class="conteudo">
-            <div class="retangulo"></div>
-            <div>
-              <h4>Itaque earum rerum</h4>
-              <p>
-                hic tenetur a sapiente delectus, ut aut<br />
-                reiciendis voluptatibus maiores alias<br />
-                consequatur aut perferendis doloribus<br />
-                asperiores repellat.
-              </p>
+        <div class="conteudos">
+          <h1>MAIS CONTEÚDO PARA VOCÊ</h1>
+          <div class="mais-conteudo">
+            <div class="conteudo">
+              <a href="#"
+                ><div class="retangulo"></div>
+                <div>
+                  <h4>Itaque earum rerum</h4>
+                  <p>
+                    hic tenetur a sapiente delectus, ut aut<br />
+                    reiciendis voluptatibus maiores alias<br />
+                    consequatur aut perferendis doloribus<br />
+                    asperiores repellat.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="conteudo">
+              <a href="#"
+                ><div class="retangulo"></div>
+                <div>
+                  <h4>Itaque earum rerum</h4>
+                  <p>
+                    hic tenetur a sapiente delectus, ut aut<br />
+                    reiciendis voluptatibus maiores alias<br />
+                    consequatur aut perferendis doloribus<br />
+                    asperiores repellat.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="conteudo">
+              <a href="#"
+                ><div class="retangulo"></div>
+                <div>
+                  <h4>Itaque earum rerum</h4>
+                  <p>
+                    hic tenetur a sapiente delectus, ut aut<br />
+                    reiciendis voluptatibus maiores alias<br />
+                    consequatur aut perferendis doloribus<br />
+                    asperiores repellat.
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
-          <div class="conteudo">
-            <div class="retangulo"></div>
-            <div>
-              <h4>Itaque earum rerum</h4>
-              <p>
-                hic tenetur a sapiente delectus, ut aut<br />
-                reiciendis voluptatibus maiores alias<br />
-                consequatur aut perferendis doloribus<br />
-                asperiores repellat.
-              </p>
-            </div>
-          </div>
-          <div class="conteudo">
-            <div class="retangulo"></div>
-            <div>
-              <h4>Itaque earum rerum</h4>
-              <p>
-                hic tenetur a sapiente delectus, ut aut<br />
-                reiciendis voluptatibus maiores alias<br />
-                consequatur aut perferendis doloribus<br />
-                asperiores repellat.
-              </p>
-            </div>
+          <div id="botão-todos-posts">
+            <a href="blog.html" class="botão-todos-posts">ver todos os posts</a>
           </div>
         </div>
-        <div class="botão-todos-posts"><a href="">ver todos os posts</a></div>
       </section>
     </main>
     <footer>
-      <div class="container-logo-rodape">
-        <img
-          class="logo-rodape"
-          src="images/logo-footer.png"
-          alt="Logo rodapé Dindin"
-        />
-        <nav class="nav-rodape">
-          <ul class="menu-rodape">
-            <li class="menu-item-rodape">
-              <a class="menu-item-link-rodape" href="">cursos</a>
-            </li>
-            <li class="menu-item-rodape">
-              <a class="menu-item-link-rodape" href="">blog</a>
-            </li>
-            <li class="menu-item-rodape">
-              <a class="menu-item-link-rodape" href="">contato</a>
-            </li>
-          </ul>
+      <div class="container-logo-rodapé">
+        <a href="inicio.html"
+          ><img
+            class="logo-rodapé"
+            src="images/logo-footer.png"
+            alt="Logo rodapé Dindin"
+        /></a>
+        <nav class="menu-rodape">
+          <a class="menu-item-rodapé" href="cursos.html">cursos</a>
+          <a class="menu-item-rodapé" href="blog.html">blog</a>
+          <a class="menu-item-rodapé" href="contato.html">contato</a>
         </nav>
-        <div class="botões-rodape">
-          <a class="botao-rodape" href="">quero ser prof</a>
-          <a class="botao-rodape" href="">aqui tem outro link</a>
+        <div class="botões-rodapé">
+          <a href="#"><button class="botão-rodapé">quero ser prof</button></a>
+          <a href="#"
+            ><button class="botão-rodapé">aqui tem outro link</button></a
+          >
         </div>
       </div>
     </footer>
