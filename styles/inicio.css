@@ -70,7 +70,7 @@ header {
   color: #ff4081;
   font-size: max(1.7vw, 13px);
   text-decoration: none;
-  border: 2px solid #ff4081;
+  border: max(0.14vw, 1px) solid #ff4081;
   border-radius: 62px;
   padding: 0.6vw 2.6vw;
   line-height: max(1.98vw, 15.5px);
@@ -99,7 +99,7 @@ header {
 }
 
 .curso-imagem img {
-  height: max(19vw, 135px);
+  height: max(19vw, 100px);
 }
 
 .curso-item h3 {
@@ -148,7 +148,7 @@ header {
 
 .comentário {
   display: flex;
-  gap: 2vw;
+  gap: 3vw;
   font-size: max(1.15vw, 9px);
 }
 
@@ -160,6 +160,7 @@ header {
   font-size: max(1.15vw, 9px);
   line-height: max(1.56vw, 12px);
   font-weight: 300;
+  width: 23.5vw;
   margin: 0 0 1vw 0;
 }
 
@@ -192,8 +193,8 @@ header {
 
 .retangulo {
   background-color: #c4c4c4;
-  width: max(20vw, 159px);
-  height: max(13.4vw, 96px);
+  width: max(20vw, 110px);
+  height: max(13.4vw, 67px);
 }
 
 .conteudo h4 {
@@ -289,45 +290,34 @@ footer {
 
 @media (max-width: 750px) {
   .banner {
-    display: inline;
+    text-align: center;
   }
 
   .banner img {
     display: none;
   }
 
-  .banner-texto,
-  .cursos,
-  .feedback,
-  .conteudos {
-    margin: 5vw 10vw;
+  .curso-item p {
+    display: none;
   }
 
-  .outros-conteudos {
-    padding: 0;
+  .comentário img {
+    display: none;
   }
 
-  .cursos,
+  .comentário p {
+    width: 36vw;
+  }
+
   .mais-conteudo {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .conteudo {
+    display: flex;
     justify-content: flex-start;
     gap: 5vw;
     text-align: left;
-  }
-
-  .curso-item,
-  .conteudo {
-    display: flex;
-    gap: 5vw;
-  }
-
-  .curso-imagem img {
-    width: max(20vw, 85px);
-    height: auto;
-  }
-
-  .curso-item h3 {
-    margin-top: 0;
   }
 }
