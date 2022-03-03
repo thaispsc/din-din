@@ -83,12 +83,12 @@ article h3 {
   margin-top: 5vw;
 }
 
-.nossos-cursos {
+#nossos-cursos {
   background-color: #f6f6f6;
   padding: 3vw 0 8vw 0;
 }
 
-.nossos-cursos h1 {
+#nossos-cursos h1 {
   font-size: max(3.2vw, 25px);
   color: #ff4081;
   font-weight: 500;
@@ -96,7 +96,7 @@ article h3 {
   margin-bottom: 5vw;
 }
 
-.cursos {
+#cursos {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
@@ -129,7 +129,7 @@ article h3 {
 .botão-começar:hover {
   background-color: #fff;
   color: #ff4081;
-  border: 1px solid #ff4081;
+  border: max(0.14vw, 1px) solid #ff4081;
 }
 
 footer {
@@ -188,7 +188,7 @@ footer {
 }
 
 @media (max-width: 750px) {
-  .cursos {
+  #cursos {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;

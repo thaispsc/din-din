@@ -45,30 +45,30 @@ header {
   opacity: 0.5;
 }
 
-#introdução {
+#introdução-curso {
   margin: 5vw 12vw;
 }
 
-#introdução-container {
+#introdução-container-curso {
   display: flex;
   align-content: center;
   gap: 10vw;
 }
 
-#texto-introdução {
+#texto-introdução-curso {
   width: 30vw;
 }
 
-#texto-introdução h1 {
+#texto-introdução-curso h1 {
   font-size: max(3.5vw, 27px);
   color: #ff4081;
 }
 
-#texto-introdução p {
+#texto-introdução-curso p {
   font-size: max(1.3vw, 10px);
 }
 
-#imagem-introdução img {
+#imagem-introdução-curso img {
   width: 26.5vw;
 }
 
@@ -82,7 +82,7 @@ header {
   display: flex;
   gap: 10vw;
   align-items: flex-start;
-  padding: 0 6vw 6vw 6vw;
+  padding: 0 6vw 7vw 6vw;
 }
 
 .aula-vídeo img {
@@ -149,7 +149,7 @@ footer {
   width: max(20vw, 120px);
   height: max(3.2vw, 20px);
   font-size: max(1.3vw, 10px);
-  border: 1px solid #fff;
+  border: max(0.14vw, 1px) solid #fff;
   border-radius: 62px;
   margin-bottom: 1vw;
   box-sizing: border-box;
@@ -164,11 +164,11 @@ footer {
 }
 
 @media (max-width: 750px) {
-  #imagem-introdução {
+  #imagem-introdução-curso {
     display: none;
   }
 
-  #texto-introdução {
+  #texto-introdução-curso {
     width: 80%;
   }
 
@@ -178,6 +178,6 @@ footer {
   }
 
   .aula-texto p {
-    width: max(80vw, 231px);
+    width: max(60vw, 231px);
   }
 }

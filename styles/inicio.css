@@ -45,27 +45,27 @@ header {
   opacity: 0.5;
 }
 
-.banner {
+#banner {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   margin: 7vw auto;
 }
 
-.banner h1 {
+#banner h1 {
   font-size: max(3.8vw, 30px);
   color: #ff4081;
   margin: 0;
   line-height: max(4.4vw, 34.5px);
 }
 
-.banner p {
+#banner p {
   font-size: max(1.7vw, 13px);
   margin: 2vw 0 3vw 0;
   line-height: max(1.98vw, 15.5px);
 }
 
-.botão-saber-mais {
+#botão-saber-mais {
   text-align: center;
   color: #ff4081;
   font-size: max(1.7vw, 13px);
@@ -76,22 +76,22 @@ header {
   line-height: max(1.98vw, 15.5px);
 }
 
-.botão-saber-mais:hover {
+#botão-saber-mais:hover {
   transition: all 300ms;
   background-color: #ff4081;
   color: #fff;
 }
 
-.banner img {
+#banner img {
   width: max(34.8vw, 250px);
 }
 
-.nossos-cursos {
+#nossos-cursos {
   background-color: #f6f6f6;
   padding: 3vw 0 8vw 0;
 }
 
-.cursos {
+#cursos {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
@@ -126,20 +126,20 @@ header {
   transition: all 300ms;
   background-color: #fff;
   color: #ff4081;
-  border: 1px solid #ff4081;
+  border: max(0.14vw, 1px) solid #ff4081;
 }
 
-.feedback {
+#feedback {
   margin: 8vw 10vw;
 }
 
-.feedback h2 {
+#feedback h2 {
   color: #009688;
   font-size: max(2.3vw, 18px);
   margin-bottom: 6vw;
 }
 
-.comentários {
+#comentários {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -170,18 +170,18 @@ header {
   margin: 0 auto;
 }
 
-.outros-conteudos {
+#outros-conteudos {
   background-color: #f6f6f6;
   padding: 8vw 10vw;
 }
 
-.outros-conteudos h1 {
+#outros-conteudos h1 {
   color: #009688;
   font-size: max(2.3vw, 18px);
   line-height: 42.51px;
 }
 
-.mais-conteudo {
+#mais-conteudo {
   display: flex;
   gap: 9vw;
   margin: 5vw auto;
@@ -222,7 +222,7 @@ header {
   text-decoration: none;
   color: #ff4081;
   background-color: #f6f6f6;
-  border: 2px solid #ff4081;
+  border: max(0.14vw, 1px) solid #ff4081;
   border-radius: 62px;
   padding: 0.8vw 3.4vw;
 }
@@ -274,7 +274,7 @@ footer {
   width: max(20vw, 120px);
   height: max(3.2vw, 20px);
   font-size: max(1.3vw, 10px);
-  border: 1px solid #fff;
+  border: max(0.14vw, 1px) solid #fff;
   border-radius: 62px;
   margin-bottom: 1vw;
   box-sizing: border-box;
@@ -289,11 +289,11 @@ footer {
 }
 
 @media (max-width: 750px) {
-  .banner {
+  #banner {
     text-align: center;
   }
 
-  .banner img {
+  #banner img {
     display: none;
   }
 
@@ -309,7 +309,7 @@ footer {
     width: 36vw;
   }
 
-  .mais-conteudo {
+  #mais-conteudo {
     display: flex;
     flex-wrap: wrap;
   }

@@ -45,28 +45,28 @@ header {
   opacity: 0.5;
 }
 
-#introdução-container {
+#introdução-container-blog {
   display: flex;
   justify-content: center;
   gap: 10vw;
   margin: 5vw auto;
 }
 
-#texto-introdução {
+#texto-introdução-blog {
   width: 30%;
   margin-top: 2vw;
 }
 
-#texto-introdução h1 {
+#texto-introdução-blog h1 {
   font-size: max(3vw, 24px);
   color: #009688;
 }
 
-#texto-introdução p {
+#texto-introdução-blog p {
   font-size: max(1.3vw, 10px);
 }
 
-#imagem-introdução img {
+#imagem-introdução-blog img {
   width: 30vw;
 }
 
@@ -147,7 +147,7 @@ footer {
   width: max(20vw, 120px);
   height: max(3.2vw, 20px);
   font-size: max(1.3vw, 10px);
-  border: 1px solid #fff;
+  border: max(0.14vw, 1px) solid #fff;
   border-radius: 62px;
   margin-bottom: 1vw;
   box-sizing: border-box;
@@ -162,11 +162,11 @@ footer {
 }
 
 @media (max-width: 750px) {
-  #imagem-introdução {
+  #imagem-introdução-blog {
     display: none;
   }
 
-  #texto-introdução {
+  #texto-introdução-blog {
     width: 70%;
   }
 
