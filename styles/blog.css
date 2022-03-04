@@ -187,11 +187,16 @@ footer {
 
   .conteúdo-individual {
     margin-left: 12vw;
+    margin-bottom: 10vw;
   }
 
   .conteúdo-individual h3,
   .retângulo,
   .conteúdo-individual p {
     width: max(76vw, 260px);
+  }
+
+  .retângulo {
+    height: max(38vw, 130px);
   }
 }
