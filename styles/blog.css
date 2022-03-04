@@ -48,7 +48,7 @@ header {
 #introdução-container-blog {
   display: flex;
   justify-content: center;
-  gap: 10vw;
+  gap: 13vw;
   margin: 5vw auto;
 }
 
@@ -162,17 +162,36 @@ footer {
 }
 
 @media (max-width: 750px) {
+  #introdução-container-blog {
+    justify-content: flex-start;
+    margin-left: 12vw;
+  }
+
   #imagem-introdução-blog {
     display: none;
   }
 
-  #texto-introdução-blog {
-    width: 70%;
+  #texto-introdução-blog h1 {
+    width: 55vw;
+  }
+
+  #texto-introdução-blog p {
+    width: 76vw;
   }
 
   #conteúdos-container {
     flex-direction: column;
     align-items: center;
-    padding-left: 15vw;
+    padding-left: 0;
+  }
+
+  .conteúdo-individual {
+    margin-left: 12vw;
+  }
+
+  .conteúdo-individual h3,
+  .retângulo,
+  .conteúdo-individual p {
+    width: max(76vw, 260px);
   }
 }

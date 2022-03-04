@@ -168,8 +168,12 @@ footer {
     display: none;
   }
 
-  #texto-introdução-curso {
-    width: 80%;
+  #texto-introdução-curso h1 {
+    width: 60vw;
+  }
+
+  #texto-introdução-curso p {
+    width: 76vw;
   }
 
   .aula {
@@ -178,6 +182,10 @@ footer {
   }
 
   .aula-texto p {
-    width: max(60vw, 231px);
+    width: max(76vw, 231px);
+  }
+
+  .aula-vídeo img {
+    width: max(76vw, 231px);
   }
 }
